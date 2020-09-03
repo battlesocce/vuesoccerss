@@ -1,0 +1,50 @@
+{% load crispy_forms_tags %}
+{%load static%}
+<style>
+body {
+
+    font-family: "Quicksand", sans-serif;
+
+}
+.responsive{
+width:100%;
+height:auto;
+
+}
+.card__image {
+  flex-basis: 400px;ss
+  min-width: 0;
+  min-height: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<br>
+{% block auth %}
+<div class="container">
+<h2 class="display-4"><a href="/" style="color: inherit; text-decoration: none;">Battle Soccer</a></h2>
+<br>
+<div class="row">
+  <div class="col-sm-7 col-xs-12 col-md-6 col-lg-6">
+<img src="{{MEDIA_URL}}regs1.png" class="card__image" alt="cool" style="width:100%" >
+  </div>
+  <div class="col-sm-5 col-xs-12  col-md-6 col-lg-6">
+    <form method="POST">
+<div class="form-group">
+         {% csrf_token %}
+        {{ form|crispy }} 
+</div>
+        <br>
+<button type="submit" class="btn btn-dark">sign up</button>
+    </form>
+<p class="mt-2">Or <a href="{% url 'login' %}">Login</a></p> 
+</div>
+</div>
+</body>
+{% endblock %}
