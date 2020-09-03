@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-6 col-lg-6 order-2 order-lg-1">
                             <h3>Premium features</h3><br>
                                         <h4 class="subheading">The permium features of this turf are above expectations.</h4>
                                         <p class="text-muted">Advanced lighting features-It has on of the top class lighting features which enable matches taking place in night be as clear 
@@ -36,7 +36,7 @@
                                             And the premium grass cut in the proper height and it's maintanence finishes the turf to an absolute perfection.</p>
                                            
                         </div>
-                        <div class="col-md-6 col-lg-6 how-img">
+                        <div class="col-md-6 col-lg-6 order-1 order-lg-2 how-img">
                             <img src="https://i.pinimg.com/originals/de/d7/ae/ded7ae3560b13e10100ce471e2be7307.png" style="width:100%" alt=""/>
                         </div>
                     </div>
