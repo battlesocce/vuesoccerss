@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!k4cbyp4ui(ls&mck*kosuql9(mpy)snmakwmcfrta=!5-33(k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -160,14 +160,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 # django.contrib.sites
 SITE_ID = 1
 # django-allauth
+ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_EMAIL_REQUIRED = (True)
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'battlesoccers@gmail.com'
-EMAIL_HOST_PASSWORD = 'Sujitha312'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 
 
