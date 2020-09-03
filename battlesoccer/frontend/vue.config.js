@@ -4,7 +4,6 @@ module.exports = {
     // on Windows you might want to set publicPath: "http://127.0.0.1:8080/" 
     publicPath: "http://127.0.0.1:8080/",
     outputDir: './dist/',
-    assetsDir: 'static',
 
     chainWebpack: config => {
 
@@ -20,6 +19,10 @@ module.exports = {
 
         config.resolve.alias
             .set('__STATIC__', 'static')
+
+         module.exports = {
+           assetsDir: 'static'
+         }
 
         config.devServer
             // the first 3 lines of the following code have been added to the configuration
