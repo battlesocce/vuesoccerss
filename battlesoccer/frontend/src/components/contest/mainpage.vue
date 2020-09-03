@@ -143,10 +143,10 @@
                 </div>
 </div>
                  <div class="row">
-                        <div class="col-md-6 col-lg-6 how-img">
+                        <div class="col-md-6 col-lg-6 order-2 order-lg-1 how-img">
                             <img src="https://image.flaticon.com/icons/svg/3379/3379220.svg" style="width:65%" alt=""/>
                         </div>
-                        <div class="col-md-6 col-lg-6"><br>
+                        <div class="col-md-6 col-lg-6 order-1 order-lg-2"><br>
                             <h3>Match co-ordinators</h3><br>
                                         <h4 class="subheading">Our battlestation currently in madurai is Hattricksports.</h4>
                         <p class="text-muted">Hattrick sports turf is one of the finest turfs in madurai.It has it's own reputation and advantages , we found this place to be
